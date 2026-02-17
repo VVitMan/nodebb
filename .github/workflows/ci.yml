@@ -39,7 +39,6 @@ jobs:
   deploy:
     needs: build-and-push
     runs-on: ubuntu-latest
-
     steps:
       # 5. Update IMAGE_TAG environment variable in Dokploy
       - name: Update IMAGE_TAG in Dokploy
